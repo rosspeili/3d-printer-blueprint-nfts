@@ -50,6 +50,7 @@ As for authentication, the contract could include additional checks to ensure th
 
 <h2>Basic .py interface for 3d printers (may vary based on printer model):</h2>
 
+//
 import requests
 
 # define the endpoint to access the NFT contract
@@ -80,6 +81,8 @@ if response.status_code == 200:
 else:
     print("Error printing sneaker:", response.text)
     
+//
+    
 This code assumes that the 3D printer uses an API to receive and process print jobs, and that authentication is handled using a simple username/password scheme. The code retrieves the sneaker blueprint from the NFT contract, authenticates the user with the printer, and sends the sneaker blueprint to the printer for printing. The code then handles the response from the printer to determine whether the sneaker was printed successfully or not.
 
 Note that this is a very simplified example, and in practice, the code would need to handle many more edge cases, error conditions, and security concerns. Additionally, the code would need to be customized to work with the specific 3D printer and software being used.  
@@ -92,13 +95,13 @@ STL (STereoLithography) - This is the most common format used for 3D printing. I
 OBJ (Wavefront Object) - This format is often used for 3D printing because it supports complex geometries, textures, and materials.
 AMF (Additive Manufacturing File Format) - This is a newer format that supports more advanced features like color, materials, and textures.
 
-The most common operating systems used for 3D printing are:
+<b>The most common operating systems used for 3D printing are:</b>
 
 Windows - Many 3D printing software applications and drivers are designed to work on Windows operating systems.
 MacOS - Macs are becoming increasingly popular for 3D printing, and many software applications and drivers are available for MacOS.
 Linux - Linux is a popular operating system for 3D printing enthusiasts and professionals due to its flexibility and open-source nature.
 
-The most common programming languages used for 3D printing are:
+<b>The most common programming languages used for 3D printing are:</b>
 
 Python - Python is a popular language for 3D printing due to its ease of use and large community of developers creating open-source libraries for 3D printing.
 C++ - C++ is a powerful and widely used language in the 3D printing industry due to its speed and efficiency.
