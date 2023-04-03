@@ -1,2 +1,4 @@
 # 3d-printer-bluprint-nfts
 NFTs as access/authentication tokens for 3d-printing blueprints.
+
+The project proposes the use of an NFT format to provide access to 3D printer blueprints, where the NFT represents ownership of the blueprint and provides authentication for the user to access and print the item. Specifically, the project suggests that users could buy an NFT representing a specific item, such as a Nike sneaker, and use it to access the 3D printer blueprint for that item. The code provided is an example of how a Python script could handle the authentication and printing process for a hypothetical 3D printer that uses AMF files. Overall, the project explores the potential for NFTs to provide a secure and decentralized means of distributing 3D printer blueprints, while also protecting the intellectual property of the original creators.
