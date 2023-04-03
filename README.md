@@ -50,32 +50,31 @@ As for authentication, the contract could include additional checks to ensure th
 
 <h2>Basic .py interface for 3d printers (may vary based on printer model):</h2>
 
-//
 import requests
 
-# define the endpoint to access the NFT contract
+<b>define the endpoint to access the NFT contract</b>
 nft_contract_endpoint = "https://example.com/nft-contract"
 
-# define the endpoint to access the 3D printer
+<b>define the endpoint to access the 3D printer</b>
 printer_endpoint = "https://example.com/printer"
 
-# define the token ID of the NFT representing the sneaker blueprint
+<b>define the token ID of the NFT representing the sneaker blueprint</b>
 sneaker_token_id = 1234
 
-# retrieve the sneaker blueprint from the NFT contract
+<b>retrieve the sneaker blueprint from the NFT contract</b>
 response = requests.get(nft_contract_endpoint + "/sneaker/" + str(sneaker_token_id))
 sneaker_blueprint = response.json()["blueprint"]
 
-# authenticate the user
+<b>authenticate the user</b>
 user_authentication = {"username": "user1", "password": "password1"}
 response = requests.post(printer_endpoint + "/auth", json=user_authentication)
 auth_token = response.json()["auth_token"]
 
-# send the sneaker blueprint to the printer for printing
+<b>send the sneaker blueprint to the printer for printing</b>
 headers = {"Authorization": "Bearer " + auth_token}
 response = requests.post(printer_endpoint + "/print", json=sneaker_blueprint, headers=headers)
 
-# handle the response from the printer
+<b>handle the response from the printer</b>
 if response.status_code == 200:
     print("Sneaker printed successfully")
 else:
